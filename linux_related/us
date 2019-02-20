@@ -4,7 +4,7 @@ xkb_symbols "basic" {
     name[Group1]= "English (US)";
 
     //key <TLDE> {	[     grave,	asciitilde	]	};
-    key <TLD>  {        [     Escape                    ]       };
+    key <TLDE>  {        [     Escape                    ]       };
     key <AE01> {	[	  1,	exclam 		]	};
     key <AE02> {	[	  2,	at		]	};
     key <AE03> {	[	  3,	numbersign	]	};

@@ -1,0 +1,45 @@
+{
+    //Terminal Related.
+    //Editor related
+    "editor.fontFamily": "Mononoki ,Consolas, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.statusBar.visible": true,
+
+    //Keyboard dispatch: Use system xkb
+    "keyboard.dispatch": "keyCode",
+    //vim related
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    //vim Key bindings
+    "vim.insertModeKeyBindings": [{
+        "before": ["j", "j"],
+        "after": ["<ESC>"]
+    }],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-k>": false,
+        "<C-b>": false,
+        "<C-w>": false,
+        "<C-v>": false
+    },
+
+
+    //Code Runner
+    "code-runner.runInTerminal": true,
+    "code-runner.ignoreSelection": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "latex-workshop.view.pdf.viewer": "browser",
+    "window.zoomLevel": 0,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all",
+
+}
