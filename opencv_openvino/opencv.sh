@@ -1,15 +1,26 @@
-opencvVersion="4.0.0"
+opencvVersion="4.0.1"
 echo "Installing opencv-$opencvVersion"
-./opencv_prerequisites.sh
+#./opencv_prerequisites.sh
 #git clone https://github.com/opencv/opencv.git
-cd ./opencv
-git checkout $opencvVersion
-cd ..
+rm -rf opencv opencv_contrib
+if [ -f opencv-$opencvVersion.zip ]; then
+    unzip opencv-$opencvVersion
+    mv opencv-$opencvVersion opencv
+else
+    git clone https://github.com/opencv/opencv.git
+    cd ./opencv
+    git checkout $opencvVersion
+    cd ..
+fi
 
-#git clone https://github.com/opencv/opencv_contrib.git
-#cd ./opencv_contrib
-#git checkout $opencvVersion
-#cd ..
+if [ -f opencv_contrib-$opencvVersion.zip ]; then
+    unzip opencv_contrib-$opencvVersion
+    mv opencv_contrib-$opencvVersion opencv_contrib
+else
+    git clone https://github.com/opencv/opencv_contrib.git
+    cd ./opencv_contrib
+    git checkout $opencvVersion
+    cd ..
 
 cd opencv
 mkdir build
