@@ -1,1 +1,2 @@
-./opencv_openvino/opencv/
+./opencv_openvino/opencv-4.0.1/
+*.zip
